@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/index.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <title>Exercício calculadora</title>
+</head>
+<body>
+
+        <div id="dados">
+            <h1>Calculadora</h1>
+            <label><input id="numero1"type="number" placeholder="Digite um número aqui" onmouseout="saiu()"></label>
+            <label >
+                <select name="ordenacao" id="selecionar">
+                    <option value="0"selected disabled id="operacao">Escolha a operação...</option>
+                    <option value="1" id="multiplicar">Multiplicação</option>
+                    <option value="2">Divisão</option>
+                    <option value="3">Exponenciação</option>
+                    <option value="4">Soma</option>
+                    <option value="5">Subtração</option>
+                </select>
+            </label>
+            <label ><input id="numero2"type="number" placeholder="Digite um número aqui" onmouseout="saiu()"></label>
+               <button onclick="calcular()">Enviar</button> <br>
+               <button onclick="apagar()">Apagar</button> <br>
+               Resultado: <br>
+               <label>
+                   <div id="resultado"></div>
+               </label>
+        </div>
+
+
+</body>
+</html>
